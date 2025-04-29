@@ -7,13 +7,13 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
@@ -38,7 +38,7 @@ interface SubmitButtonProps {
 function App() {
   const [studentFile, setStudentFile] = useState<File | null>(null);
   const [answerKeyFile, setAnswerKeyFile] = useState<File | null>(null);
-  const [strictnessLevel, setStrictnessLevel] = useState<string>("Lenient");
+  // const [strictnessLevel, setStrictnessLevel] = useState<string>("Lenient");
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
 
   const handleStudentFileChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -58,7 +58,6 @@ function App() {
     console.log({
       studentFile,
       answerKeyFile,
-      strictnessLevel,
     });
     setTimeout(() => {
       setIsSubmitting(false);
